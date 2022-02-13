@@ -1,0 +1,14 @@
+:root {
+  margin: 2rem;
+}
+
+article {
+  border: 2px solid;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+}
