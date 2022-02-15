@@ -38,7 +38,6 @@ function handleData(ninetiesSingles) {
     clone.querySelector(".artist").textContent = single.Artist;
     clone.querySelector(".album").textContent = single.Album;
     clone.querySelector(".year").textContent = single.Year;
-    clone.querySelector("p").textContent = single.Description;
     //grab parent
     const parent = document.querySelector("main");
     //append it

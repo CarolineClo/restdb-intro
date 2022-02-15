@@ -1,4 +1,11 @@
-const url = "https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles?max=1";
+/*const urlParams = new URLSearchParams(window.location.search);
+//const brandname = urlParams.get("brandname");
+const id = urlParams.get("id");
+console.log(urlParams);
+//alert("hello");*/
+
+const url =
+  "https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles/620b84d6f701f460000a129e";
 
 const options = {
   headers: {
@@ -15,30 +22,20 @@ fetch(url, options)
   })
   .then((data) => {
     handleData(data);
+    console.log(data);
   })
   .catch((e) => {
     console.error("An error occured:", e.message);
   });
 
-function handleData(ninetiesSingles) {
-  ninetiesSingles.forEach((single) => {
-    console.log(single);
-    //make template
-    //grab it
-    const template = document.querySelector("#songTemplate").content;
+function handleData(single) {
+  console.log(single);
 
-    //clone it
-    const clone = template.cloneNode(true);
-    //change it
-    clone.querySelector(".song").textContent = single.Song;
-    clone.querySelector(".artist").textContent = "by" + single.Artist;
-    clone.querySelector(".album").textContent = "Album: " + single.Album;
-    clone.querySelector(".genre").textContent = single.Genre;
-    clone.querySelector("a").setAttribute("href", `${single.Youtube}`);
-    clone.querySelector("p").textContent = single.Lyrics;
-    //grab parent
-    const parent = document.querySelector("main");
-    //append it
-    parent.appendChild(clone);
-  });
+  document.querySelector(".song").textContent = single.Song;
+  document.querySelector(".artist").textContent = "by " + single.Artist;
+  document.querySelector(".album").textContent = "Album: " + single.Album;
+  document.querySelector(".genre").textContent = single.Genre;
+  document.querySelector("a").setAttribute("href", `${single.Youtube}`);
+  document.querySelector("p").innerText = single.Lyrics;
+  document.querySelector(".songimg").src = single.image;
 }
