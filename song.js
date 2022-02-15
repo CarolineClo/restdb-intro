@@ -1,11 +1,8 @@
-/*const urlParams = new URLSearchParams(window.location.search);
-//const brandname = urlParams.get("brandname");
+const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
-console.log(urlParams);
-//alert("hello");*/
+console.log(urlParams.get("id"));
 
-const url =
-  "https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles/620b84d6f701f460000a129e";
+const url = "https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles/" + id;
 
 const options = {
   headers: {

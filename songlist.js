@@ -1,4 +1,4 @@
-const url = "https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles?max=2";
+const url = "https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles";
 
 const options = {
   headers: {
@@ -38,6 +38,8 @@ function handleData(ninetiesSingles) {
     clone.querySelector(".artist").textContent = single.Artist;
     clone.querySelector(".album").textContent = single.Album;
     clone.querySelector(".year").textContent = single.Year;
+    clone.querySelector("img").src = single.image;
+    clone.querySelector("a").setAttribute("href", `song.html?id=${single._id}`);
     //grab parent
     const parent = document.querySelector("main");
     //append it
