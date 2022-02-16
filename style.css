@@ -1,14 +1,71 @@
-:root {
-  margin: 2rem;
+@font-face {
+  font-family: "Monoton", cursive;
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat:wght@300;500&display=swap");
 }
-
-article {
-  border: 2px solid;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
+:root {
+  --header-font: "Monoton", cursive;
+  --subheading: "Montserrat",  sans-serif 600;
+  --p-font: "Montserrat",  sans-serif 300;
+  --bg-color: #9bf2b1;
+  --primary-color: #d672f2;
+  --secondary-color: #89abd9;
+  --accent-color: #edf25e;
+  margin: 2rem #d672f2;
 }
 
 img {
   max-width: 100%;
+}
+/*Songs List page*/
+
+body {
+  background-color: var(--primary-color);
+}
+.songslist {
+  background-color: var(--primary-color);
+}
+
+/*Typography*/
+h1 {
+  font-family: var(--header-font);
+  font-size: 70px;
+  color: white;
+}
+
+.songslist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+}
+
+.songslist article {
+  background: white;
+  overflow: hidden;
+}
+
+.songslist article img {
+  width: 400px;
+  height: 400px;
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.artist,
+.song,
+.album,
+.year {
+  text-align: left;
+  margin-left: 1em;
+}
+
+.takeme {
+  display: inline-block;
+  background-color: var(--accent-color);
+  font-family: var(--subheading);
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 23em;
 }
