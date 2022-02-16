@@ -12,3 +12,17 @@ article {
 img {
   max-width: 100%;
 }
+header{
+  border-bottom: 1px solid black;
+}
+.navbar li,
+footer li {
+  display: inline;
+  text-decoration: none;
+}
+
+#homepage{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-sizing: border-box;
+}
