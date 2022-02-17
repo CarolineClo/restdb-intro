@@ -29,12 +29,20 @@ header{
   font-family: var(--header-font);
 
 }
-.navbar li,
+nav li,
 footer li {
   display: inline;
   text-decoration: none;
+  font-family: var(--subheading);
+  font-size: 2em;
+  color: var(--primary-color);
 
 }
+a{
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
 
 
 #homepage{
