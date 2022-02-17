@@ -43,11 +43,15 @@ a{
   color: var(--primary-color);
 }
 
-
-
+.artists,
+.genres {
+  border: solid 1px black;
+  padding: 30%;
+  background-color:var(--secondary-color);
+}
 #homepage{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  box-sizing: border-box;
+  
 }
 
