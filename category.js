@@ -36,7 +36,7 @@ function handleData(ninetiesSingles) {
 
     clone
       .querySelector("a")
-      .setAttribute("href", `songslist.html?Genre=${single.Genre}`);
+      .setAttribute("href", `songslist.html?genre=${single.Genre}`);
 
     const parent = document.querySelector("main");
     //append it
