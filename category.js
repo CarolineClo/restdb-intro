@@ -35,6 +35,7 @@ function handleData(ninetiesSingles) {
     clone.querySelector("a").textContent = single.Genre;
 
     /*copy.querySelector("a");.setAttribute("href", `songslist.html?q={"Genre":+ single.Genre);
+    copy.querySelector("a");.setAttribute("href", `songslist.html?genre=single.Genre;
      */
 
     /*
