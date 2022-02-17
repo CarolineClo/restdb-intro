@@ -36,14 +36,14 @@ h1 {
   font-size: 4rem;
   text-align: center;
 }
+
 nav ul,
 footer ul {
   display: flex;
   justify-content: space-evenly;
 }
 
-nav li,
-footer li {
+nav li{
   display: inline;
   list-style: none;
   text-decoration: none;
@@ -54,6 +54,14 @@ footer li {
   letter-spacing: 0.3rem;
   text-transform: uppercase;
   color: var(--primary-color);
+}
+footer li{
+  list-style: none;
+  text-shadow: 0.1rem 0.1rem var(--primary-color);
+  font-family: "Montserrat", sans-serif;
+  color: var(--accent-color);
+  font-weight: 300;
+  font-size: 1rem;
 }
 a {
   text-decoration: none;
@@ -103,6 +111,8 @@ a:hover {
   font-family: var(--header-font);
   padding: 30%;
   text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 .artists {
   background-image: url(/images/backimg.svg);
@@ -114,13 +124,38 @@ a:hover {
   background-size: contain;
   background-repeat: no-repeat;
 }
+.homebttn{
+  font-size: 1.4rem;
+  background-image: url(/images/pattern2.jpg);
+  background-size: cover;
+  font-family: var(--subheading);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: all 0.3 ease;
+  color:var(--secondary-color);
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  box-shadow: var(--primary-color) 0.2rem 0.2rem;
+  position: relative;
+}
 
+
+/*mobile*/
 #homepage {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns:  repeat(2, 1fr);
   font-size: 2rem;
   margin: 1rem;
 }
+@media (max-width: 650px) {
+  #homepage{
+    grid-template-columns: 1fr;
+  }
+  
+}
+/* laptop*/
+
 .intro {
   font-family: var(--p-font);
   font-weight: 600;
