@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
 
 :root {
-  --bg-color:#9BF2B1;
-  --primary-color:#D672F2;
-  --secondary-color:#89ABD9;
-  --accent-color:#EDF25E;
+  --bg-color: #9bf2b1;
+  --primary-color: #d672f2;
+  --secondary-color: #89abd9;
+  --accent-color: #edf25e;
 
-  --header-font: 'Monoton', cursive;
-  --subheading: 'Montserrat', sans-serif 600;
-  --p-font: 'Montserrat', sans-serif 300;
-  ;
-    margin: 2rem;
+  --header-font: "Monoton", cursive;
+  --subheading: "Montserrat", sans-serif 600;
+  --p-font: "Montserrat", sans-serif 300;
+  margin: 2rem;
 }
 
 article {
@@ -24,34 +23,30 @@ article {
 img {
   max-width: 100%;
 }
-header{
-  border-bottom: 1px solid black;
-  font-family: var(--header-font);
-
+.songPage {
+  background-color: var(--bg-color);
 }
-nav li,
-footer li {
-  display: inline;
-  text-decoration: none;
-  font-family: var(--subheading);
-  font-size: 2em;
+.song {
   color: var(--primary-color);
-
+  font: var(--header-font);
 }
-a{
-  text-decoration: none;
+.artist {
   color: var(--primary-color);
+  font: var(--subheading);
 }
-
-.artists,
-.genres {
-  border: solid 1px black;
-  padding: 30%;
-  background-color:var(--secondary-color);
+.album {
+  color: var(--secondary-color);
+  font: var(--p-font);
 }
-#homepage{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  
+.genre {
+  color: var(--secondary-color);
+  font: var(--p-font);
 }
-
+.year {
+  color: var(--secondary-color);
+  font: var(--p-font);
+}
+.youtube {
+  color: var(--secondary-color);
+  font: var(--p-font);
+}
