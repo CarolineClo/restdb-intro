@@ -10,7 +10,6 @@
   --header-font: "Monoton", cursive;
   --subheading: "Montserrat", sans-serif;
   --p-font: "Montserrat", sans-serif;
-  margin: 2rem;
 }
 body {
   background-color: var(--bg-color);
@@ -28,19 +27,19 @@ img {
 .songPage {
   background-color: var(--bg-color);
 }
-
+/* homepage */
 h1 {
   font-family: var(--header-font);
   color: var(--primary-color);
   text-shadow: 0.3rem 0.3rem var(--accent-color);
   letter-spacing: 0.5rem;
-  font-size: 3rem;
-  justify-self: center;
+  font-size: 4rem;
+  text-align: center;
 }
 nav ul,
 footer ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 nav li,
@@ -48,16 +47,32 @@ footer li {
   display: inline;
   list-style: none;
   text-decoration: none;
-
-  font-family: var(--subheading);
-  font-size: 1rem;
+  text-shadow: 0.1rem 0.1rem var(--bg-color);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
   color: var(--primary-color);
-  font: var(--header-font);
+}
+a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 .songimg {
   background-color: white;
   padding: 10%;
 }
+
+.navbar,
+footer {
+  background-color: var(--secondary-color);
+  padding: 0.4rem;
+  border-radius: 0.4rem;
+  box-shadow: var(--primary-color) 0.2rem 0.2rem;
+}
+/*Song page Alessia*/
+
 .artist {
   color: var(--primary-color);
   font: var(--subheading);
@@ -82,18 +97,34 @@ footer li {
 a:hover {
   color: var(--accent-color);
 }
-
+/*homepage buttons*/
 .artists,
 .genres {
   font-family: var(--header-font);
   padding: 30%;
-  background-color: var(--secondary-color);
+  text-align: center;
+}
+.artists {
+  background-image: url(/images/backimg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.genres {
+  background-image: url(/images/backimg.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 #homepage {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-size: 2rem;
+  margin: 1rem;
+}
+.intro {
+  font-family: var(--p-font);
+  font-weight: 600;
+  color: var(--secondary-color);
 }
 /*Songs List page*/
 
