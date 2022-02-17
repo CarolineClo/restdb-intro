@@ -21,6 +21,7 @@ img {
 }
 .songimg {
   background-color: white;
+  padding: 10%;
 }
 .artist {
   color: var(--primary-color);
@@ -51,7 +52,7 @@ img {
 
 @media screen and (min-width: 900px) {
   .songPage {
-    display: grid; /* can it be flex? */
+    display: grid;
     grid-template-columns: 50% 50%;
   }
 }
