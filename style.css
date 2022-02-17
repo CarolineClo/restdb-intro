@@ -19,6 +19,9 @@ img {
   color: var(--primary-color);
   font: var(--header-font);
 }
+.songimg {
+  background-color: white;
+}
 .artist {
   color: var(--primary-color);
   font: var(--subheading);
@@ -38,4 +41,17 @@ img {
 .youtube {
   color: var(--secondary-color);
   font: var(--p-font);
+}
+@media screen and (min-width: 280px) {
+  .songPage {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .songPage {
+    display: grid; /* can it be flex? */
+    grid-template-columns: 50% 50%;
+  }
 }
