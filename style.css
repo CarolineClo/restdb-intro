@@ -115,6 +115,7 @@ a:hover {
   text-align: left;
   margin-left: 1em;
   font-family: var(--p-font);
+  color: black;
   font-weight: 500;
 }
 
