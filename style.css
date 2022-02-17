@@ -8,11 +8,13 @@
   --accent-color: #edf25e;
 
   --header-font: "Monoton", cursive;
-  --subheading: "Montserrat", sans-serif 600;
-  --p-font: "Montserrat", sans-serif 300;
+  --subheading: "Montserrat", sans-serif;
+  --p-font: "Montserrat", sans-serif;
   margin: 2rem;
 }
-
+body {
+  background-color: var(--bg-color);
+}
 article {
   border: 2px solid;
   padding: 2rem;
@@ -26,7 +28,29 @@ img {
 .songPage {
   background-color: var(--bg-color);
 }
-.song {
+
+h1 {
+  font-family: var(--header-font);
+  color: var(--primary-color);
+  text-shadow: 0.3rem 0.3rem var(--accent-color);
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+  justify-self: center;
+}
+nav ul,
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li,
+footer li {
+  display: inline;
+  list-style: none;
+  text-decoration: none;
+
+  font-family: var(--subheading);
+  font-size: 1rem;
   color: var(--primary-color);
   font: var(--header-font);
 }
@@ -49,4 +73,21 @@ img {
 .youtube {
   color: var(--secondary-color);
   font: var(--p-font);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+.artists,
+.genres {
+  font-family: var(--header-font);
+  padding: 30%;
+  background-color: var(--secondary-color);
+}
+
+#homepage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 2rem;
 }
