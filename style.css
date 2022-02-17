@@ -68,10 +68,7 @@ a:hover{
   padding: 30%;
   background-color:var(--secondary-color);
 }
-.artists{
-  background-image: url(/images/paper.png);
-  background-size:cover;
-}
+
 
 
 #homepage{
