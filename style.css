@@ -26,7 +26,7 @@ img {
   max-width: 100%;
 }
 .songPage {
-  background-color: var(--bg-color);
+  padding: 5%;
 }
 
 h1 {
@@ -54,10 +54,7 @@ footer li {
   color: var(--primary-color);
   font: var(--header-font);
 }
-.songimg {
-  background-color: white;
-  padding: 10%;
-}
+
 .artist {
   color: var(--primary-color);
   font: var(--subheading);
@@ -123,10 +120,10 @@ a:hover {
   margin-right: 2em;
 }
 
-.artist,
-.song,
-.album,
-.year {
+.songslist .artist,
+.songslist.song,
+.songslist.album,
+.songslist.year {
   text-align: left;
   margin-left: 1em;
   font-family: var(--p-font);
@@ -153,11 +150,36 @@ a:hover {
 .takeme:hover {
   transform: scale(1.1);
 }
+.songPagearticle {
+  background: white;
+  border: 2px solid;
+  padding: 8%;
+}
+.songPage img {
+  width: 100%;
+  justify-content: center;
+}
+.songPage h1.song,
+.songPage h1.artist,
+.songPage h2.album,
+.songPage h3.year {
+  margin-left: none;
+}
+.songPage h1.song {
+  font-size: 2em;
+}
+.songPage p {
+  color: black;
+}
+.songPage article {
+  border: none;
+}
 
 @media screen and (min-width: 280px) {
   .songPage {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    column-gap: 2%;
   }
 }
 
@@ -165,5 +187,6 @@ a:hover {
   .songPage {
     display: grid;
     grid-template-columns: 50% 50%;
+    gap: 2%;
   }
 }
