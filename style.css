@@ -15,9 +15,6 @@ body {
   background-color: var(--bg-color);
 }
 
-.songPage {
-  background-color: var(--bg-color);
-}
 /* homepage */
 h1 {
   font-family: var(--header-font);
@@ -33,12 +30,12 @@ footer ul {
   display: flex;
   justify-content: space-evenly;
 }
-.intro{
+.intro {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   text-align: center;
   font-size: 1.3rem;
-  text-shadow:0.1rem 0.1rem var(--primary-color);
+  text-shadow: 0.1rem 0.1rem var(--primary-color);
 }
 
 nav li {
@@ -57,17 +54,13 @@ footer li {
   list-style: none;
   text-shadow: 0.1rem 0.1rem var(--primary-color);
   font-family: "Montserrat", sans-serif;
-  color:var(--secondary-color);
+  color: var(--secondary-color);
   font-weight: 600;
   font-size: 1rem;
 }
 a {
   text-decoration: none;
   color: var(--primary-color);
-}
-.songimg {
-  background-color: white;
-  padding: 10%;
 }
 
 .navbar,
@@ -80,27 +73,47 @@ footer {
   border-radius: 0.4rem;
   box-shadow: var(--primary-color) 0.2rem 0.2rem;
 }
-/*Song page Alessia*/
+
+/*Song page*/
+.songPage {
+  background-color: var(--bg-color);
+}
 
 .artist {
-  color: var(--primary-color);
+  color: black;
   font: var(--subheading);
+  font-weight: 600;
+  text-align: center;
 }
 .album {
   color: var(--secondary-color);
-  font: var(--p-font);
+  font-family: var(--p-font);
 }
 .genre {
   color: var(--secondary-color);
-  font: var(--p-font);
+  font-family: var(--p-font);
 }
 .year {
   color: var(--secondary-color);
-  font: var(--p-font);
+  font-family: var(--p-font);
 }
 .youtube {
   color: var(--secondary-color);
-  font: var(--p-font);
+  font-family: var(--p-font);
+}
+figure {
+  background: white;
+  margin-top: 2em;
+  box-shadow: black 0.2rem 0.2rem 0.2rem 0.2rem;
+  border-radius: 0.4rem;
+}
+
+.songPage img {
+  width: 30em;
+  margin-top: 3em;
+  margin-bottom: 6em;
+  margin-left: 4em;
+  border-radius: 0.4rem;
 }
 
 a:hover {
@@ -133,21 +146,57 @@ a:hover {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  transition: transform 200ms ease-in-out;;
+  transition: transform 200ms ease-in-out;
   color: var(--secondary-color);
   padding: 0.5rem;
   border-radius: 0.4rem;
   box-shadow: var(--primary-color) 0.2rem 0.2rem;
   position: relative;
 }
-.homebttn:hover{
+
+.songPage h1.song,
+.songPage h1.artist,
+.songPage h2.album,
+.songPage h3.year {
+  margin-left: none;
+}
+.songPage h1.song {
+  font-size: 2em;
+}
+.songPage p {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+}
+
+.songPage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2em;
+}
+
+.homebttn:hover {
   transform: scale(1.4);
 }
-.liltext{
-  font-family:var(--subheading);
+.liltext {
+  font-family: var(--subheading);
   font-size: 0.7rem;
 }
 
+.songPage main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 2em;
+}
+@media (max-width: 650px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+  .songPage img {
+    width: 20em;
+    margin-left: 2em;
+    border-radius: 0.4rem;
+  }
+}
 /*mobile*/
 #homepage {
   display: grid;
@@ -159,7 +208,7 @@ a:hover {
   #homepage {
     grid-template-columns: 1fr;
   }
-  .homebttn{
+  .homebttn {
     font-size: 0.7rem;
   }
 }
@@ -187,6 +236,8 @@ a:hover {
 .songslist article {
   background: white;
   overflow: hidden;
+  box-shadow: black 0.2rem 0.2rem 0.2rem 0.2rem;
+  border-radius: 0.4rem;
 }
 
 .songslist img {
@@ -195,6 +246,7 @@ a:hover {
   margin-top: 2em;
   margin-left: 2em;
   margin-right: 2em;
+  border-radius: 0.4rem;
 }
 
 .songslist .artist,
@@ -223,6 +275,8 @@ a:hover {
   letter-spacing: 2px;
   font-weight: 300;
   transition: transform 200ms ease-in-out;
+  border-radius: 0.4rem;
+  box-shadow: var(--accent-color) 0.2rem 0.2rem;
 }
 
 .takeme:hover {
@@ -270,21 +324,5 @@ a:hover {
   .categoryPage {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-/*Alesia?*/
-
-@media screen and (min-width: 280px) {
-  .songPage {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .songPage {
-    display: grid;
-    grid-template-columns: 50% 50%;
   }
 }
