@@ -2,13 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 
 :root {
-  --header-font: 'Monoton', cursive;
-  --subheading: 'Montserrat', sans-serif 600;
-  --p-font: 'Montserrat', sans-serif 300;
   --bg-color:#9BF2B1;
   --primary-color:#D672F2;
   --secondary-color:#89ABD9;
   --accent-color:#EDF25E;
+
+  --header-font: 'Monoton', cursive;
+  --subheading: 'Montserrat', sans-serif 600;
+  --p-font: 'Montserrat', sans-serif 300;
+  ;
     margin: 2rem;
 }
 
@@ -24,15 +26,32 @@ img {
 }
 header{
   border-bottom: 1px solid black;
+  font-family: var(--header-font);
+
 }
-.navbar li,
+nav li,
 footer li {
   display: inline;
   text-decoration: none;
+  font-family: var(--subheading);
+  font-size: 2em;
+  color: var(--primary-color);
+
+}
+a{
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
+.artists,
+.genres {
+  border: solid 1px black;
+  padding: 30%;
+  background-color:var(--secondary-color);
+}
 #homepage{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  box-sizing: border-box;
+  
 }
+
