@@ -34,13 +34,9 @@ function handleData(ninetiesSingles) {
     //change it
     clone.querySelector("a").textContent = single.Genre;
 
-    /*copy.querySelector("a");.setAttribute("href", `songslist.html?q={"Genre":+ single.Genre);
-    copy.querySelector("a");.setAttribute("href", `songslist.html?genre=single.Genre;
-     */
-
-    /*
-q={%22Genre%22:%20%22folk%22}
-*/
+    clone
+      .querySelector("a")
+      .setAttribute("href", `songslist.html?Genre=${single.Genre}`);
 
     const parent = document.querySelector("main");
     //append it
