@@ -14,16 +14,7 @@
 body {
   background-color: var(--bg-color);
 }
-article {
-  border: 2px solid;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-}
 
-img {
-  max-width: 100%;
-}
 .songPage {
   background-color: var(--bg-color);
 }
@@ -43,7 +34,7 @@ footer ul {
   justify-content: space-evenly;
 }
 
-nav li{
+nav li {
   display: inline;
   list-style: none;
   text-decoration: none;
@@ -55,7 +46,7 @@ nav li{
   text-transform: uppercase;
   color: var(--primary-color);
 }
-footer li{
+footer li {
   list-style: none;
   text-shadow: 0.1rem 0.1rem var(--primary-color);
   font-family: "Montserrat", sans-serif;
@@ -124,7 +115,7 @@ a:hover {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.homebttn{
+.homebttn {
   font-size: 1.4rem;
   background-image: url(/images/pattern2.jpg);
   background-size: cover;
@@ -133,26 +124,24 @@ a:hover {
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: all 0.3 ease;
-  color:var(--secondary-color);
+  color: var(--secondary-color);
   padding: 0.5rem;
   border-radius: 0.4rem;
   box-shadow: var(--primary-color) 0.2rem 0.2rem;
   position: relative;
 }
 
-
 /*mobile*/
 #homepage {
   display: grid;
-  grid-template-columns:  repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   font-size: 2rem;
   margin: 1rem;
 }
 @media (max-width: 650px) {
-  #homepage{
+  #homepage {
     grid-template-columns: 1fr;
   }
-  
 }
 /* laptop*/
 
@@ -181,7 +170,7 @@ a:hover {
   overflow: hidden;
 }
 
-.songslist article img {
+.songslist img {
   width: 400px;
   height: 400px;
   margin-top: 2em;
@@ -189,13 +178,14 @@ a:hover {
   margin-right: 2em;
 }
 
-.artist,
-.song,
-.album,
-.year {
+.songslist .artist,
+.songslist .song,
+.songslist .album,
+.songslist .year {
   text-align: left;
   margin-left: 1em;
   font-family: var(--p-font);
+  color: black;
   font-weight: 500;
 }
 
