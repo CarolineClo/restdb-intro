@@ -12,3 +12,30 @@ article {
 img {
   max-width: 100%;
 }
+.songPage {
+  background-color: var(--bg-color);
+}
+.song {
+  color: var(--primary-color);
+  font: var(--header-font);
+}
+.artist {
+  color: var(--primary-color);
+  font: var(--subheading);
+}
+.album {
+  color: var(--secondary-color);
+  font: var(--p-font);
+}
+.genre {
+  color: var(--secondary-color);
+  font: var(--p-font);
+}
+.year {
+  color: var(--secondary-color);
+  font: var(--p-font);
+}
+.youtube {
+  color: var(--secondary-color);
+  font: var(--p-font);
+}
