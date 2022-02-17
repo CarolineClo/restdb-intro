@@ -133,12 +133,19 @@ a:hover {
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
-  transition: all 0.3 ease;
+  transition: transform 200ms ease-in-out;;
   color: var(--secondary-color);
   padding: 0.5rem;
   border-radius: 0.4rem;
   box-shadow: var(--primary-color) 0.2rem 0.2rem;
   position: relative;
+}
+.homebttn:hover{
+  transform: scale(1.4);
+}
+.liltext{
+  font-family:var(--subheading);
+  font-size: 0.7rem;
 }
 
 /*mobile*/
@@ -152,8 +159,10 @@ a:hover {
   #homepage {
     grid-template-columns: 1fr;
   }
+  .homebttn{
+    font-size: 0.7rem;
+  }
 }
-/* laptop*/
 
 .intro {
   font-family: var(--p-font);
