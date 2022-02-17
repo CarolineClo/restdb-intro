@@ -210,6 +210,51 @@ a:hover {
   transform: scale(1.1);
 }
 
+/*caroline on category page*/
+.categoryPage {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+  padding: 0 2rem;
+}
+
+.categoryPage h2 {
+  font-family: var(--header-font);
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-shadow: 0.3rem 0.3rem var(--accent-color);
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.categoryPage p {
+  text-align: center;
+  border: black 1px solid;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  background-color: white;
+  font-family: var(--p-font);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width: 760px) {
+  .categoryPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .categoryPage {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+/*Alesia?*/
+
 @media screen and (min-width: 280px) {
   .songPage {
     display: flex;
