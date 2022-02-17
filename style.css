@@ -8,12 +8,14 @@
   --accent-color:#EDF25E;
 
   --header-font: 'Monoton', cursive;
-  --subheading: 'Montserrat', sans-serif 600;
-  --p-font: 'Montserrat', sans-serif 300;
+  --subheading: 'Montserrat', sans-serif;
+  --p-font: 'Montserrat', sans-serif;
   ;
     margin: 2rem;
 }
-
+body{
+  background-color: var(--bg-color);
+}
 article {
   border: 2px solid;
   padding: 2rem;
@@ -21,20 +23,34 @@ article {
   flex-direction: column;
 }
 
+
 img {
   max-width: 100%;
 }
-header{
-  border-bottom: 1px solid black;
+
+h1{
   font-family: var(--header-font);
+  color: var(--primary-color);
+  text-shadow: 0.3rem 0.3rem var(--accent-color);
+  letter-spacing: 0.5rem;
+  font-size: 3rem;
+  justify-self: center;
 
 }
+nav ul,
+footer ul{
+display:flex;
+justify-content: space-around;
+}
+
 nav li,
 footer li {
   display: inline;
+  list-style: none;
   text-decoration: none;
+
   font-family: var(--subheading);
-  font-size: 2em;
+  font-size: 1rem;
   color: var(--primary-color);
 
 }
@@ -42,16 +58,29 @@ a{
   text-decoration: none;
   color: var(--primary-color);
 }
+a:hover{
+  color: var(--accent-color);
+}
 
 .artists,
 .genres {
-  border: solid 1px black;
+  font-family:var(--header-font);
   padding: 30%;
   background-color:var(--secondary-color);
 }
+.artists{
+  background-image: url(/images/paper.png);
+  background-size:cover;
+}
+.genres{
+  background-image: url(/images/gasoline.png);
+  background-size: cover;
+}
+
 #homepage{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  font-size: 2rem;
   
 }
 
