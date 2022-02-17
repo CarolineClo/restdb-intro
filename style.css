@@ -54,6 +54,10 @@ footer li {
   color: var(--primary-color);
   font: var(--header-font);
 }
+.songimg {
+  background-color: white;
+  padding: 10%;
+}
 .artist {
   color: var(--primary-color);
   font: var(--subheading);
@@ -90,7 +94,7 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   font-size: 2rem;
-  }
+}
 /*Songs List page*/
 
 .songslist {
@@ -148,4 +152,18 @@ a:hover {
 
 .takeme:hover {
   transform: scale(1.1);
+}
+
+@media screen and (min-width: 280px) {
+  .songPage {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .songPage {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
 }
