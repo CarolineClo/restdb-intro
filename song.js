@@ -19,7 +19,7 @@ fetch(url, options)
   })
   .then((data) => {
     handleData(data);
-    console.log(data);
+    //console.log(data);
   })
   .catch((e) => {
     console.error("An error occured:", e.message);
@@ -32,7 +32,9 @@ function handleData(single) {
   document.querySelector(".artist").textContent = "by " + single.Artist;
   document.querySelector(".album").textContent = "Album: " + single.Album;
   document.querySelector(".genre").textContent = single.Genre;
-  document.querySelector("a").setAttribute("href", `${single.Youtube}`);
+  document
+    .querySelector(".youtube a")
+    .setAttribute("href", `${single.Youtube}`);
   document.querySelector("p").innerText = single.Lyrics;
   document.querySelector(".songimg").src = single.image;
 }

@@ -1,7 +1,4 @@
-/*const url = `https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles?q={%22$distinct%22:%20%22Genre%22}&sort=Genre`;
- */
-
-const url = `https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles`;
+const url = `https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles?q={"$distinct": "Genre"}&sort=Genre`;
 
 const options = {
   headers: {
@@ -32,11 +29,9 @@ function handleData(ninetiesSingles) {
     //clone it
     const clone = template.cloneNode(true);
     //change it
-    clone.querySelector("a").textContent = single.Genre;
+    clone.querySelector("a").textContent = single;
 
-    clone
-      .querySelector("a")
-      .setAttribute("href", `songslist.html?genre=${single.Genre}`);
+    clone.querySelector("a").href += single;
 
     const parent = document.querySelector("main");
     //append it

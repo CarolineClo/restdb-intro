@@ -1,8 +1,15 @@
 const urlParams = new URLSearchParams(window.location.search);
-const genre = urlParams.get("Genre");
+const genre = urlParams.get("genre");
 
-const url =
-  `https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles?Genre=` + genre;
+let url = "https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles";
+
+if (genre) {
+  url += `?q={"Genre": "${genre}"}`;
+}
+
+/*const url = `https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles?q={"Genre": "${genre}"}`;
+ */
+console.log(url);
 
 //const url = "https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles";
 
