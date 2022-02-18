@@ -2,7 +2,7 @@ const urlParams = new URLSearchParams(window.location.search);
 const genre = urlParams.get("Genre");
 
 const url =
-  `https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles?genre=` + genre;
+  `https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles?Genre=` + genre;
 
 //const url = "https://kea2ndsemester-9e64.restdb.io/rest/nineties-singles";
 
