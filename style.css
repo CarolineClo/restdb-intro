@@ -68,7 +68,7 @@ a {
 
 .navbar,
 footer {
-  background-image: url(/images/pattern2.jpg);
+  background-image: url(images/pattern2.jpg);
   background-size: contain;
   padding: 0.4rem;
   margin-top: 0.2rem;
@@ -140,7 +140,7 @@ a:hover {
 
 .genres,
 .artists {
-  background-image: url(/images/backimg.svg);
+  background-image: url(images/backimg.svg);
   display: flex;
   flex-direction: column;
   background-size: contain;
@@ -152,7 +152,7 @@ a:hover {
 
 .homebttn {
   font-size: 1.4rem;
-  background-image: url(/images/pattern2.jpg);
+  background-image: url(images/pattern2.jpg);
   background-size: cover;
   font-family: var(--subheading);
   font-weight: 600;
