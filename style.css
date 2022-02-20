@@ -28,8 +28,10 @@ h1 {
 nav ul,
 footer ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  padding: 0;
 }
+
 .intro {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -58,6 +60,7 @@ footer li {
   font-weight: 600;
   font-size: 1rem;
 }
+
 a {
   text-decoration: none;
   color: var(--primary-color);
@@ -65,7 +68,7 @@ a {
 
 .navbar,
 footer {
-  background-image: url(../restdb-intro/images/pattern2.jpg);
+  background-image: url(../images/pattern2.jpg);
   background-size: contain;
   padding: 0.4rem;
   margin-top: 0.2rem;
@@ -120,7 +123,8 @@ a:hover {
   color: var(--accent-color);
 }
 /*homepage buttons*/
-.artists,
+
+/*.artists,
 .genres {
   font-family: var(--header-font);
   padding: 30%;
@@ -129,18 +133,26 @@ a:hover {
   margin-right: 1rem;
 }
 .artists {
-  background-image: url(../restdb-intro/images/backimg.svg);
+  background-image: url(../images/backimg.svg);
   background-size: contain;
   background-repeat: no-repeat;
-}
-.genres {
-  background-image: url(../restdb-intro/images/backimg.svg);
+}*/
+
+.genres,
+.artists {
+  background-image: url(../images/backimg.svg);
+  display: flex;
+  flex-direction: column;
   background-size: contain;
   background-repeat: no-repeat;
+  aspect-ratio: 1 / 0.6;
+  justify-content: center;
+  text-align: center;
 }
+
 .homebttn {
   font-size: 1.4rem;
-  background-image: url(../restdb-intro/images/pattern2.jpg);
+  background-image: url(../images/pattern2.jpg);
   background-size: cover;
   font-family: var(--subheading);
   font-weight: 600;
@@ -152,6 +164,7 @@ a:hover {
   border-radius: 0.4rem;
   box-shadow: var(--primary-color) 0.2rem 0.2rem;
   position: relative;
+  margin-right: 1rem;
 }
 
 .songPage h1.song,
@@ -191,6 +204,7 @@ a:hover {
   main {
     grid-template-columns: 1fr;
   }
+
   .songPage img {
     width: 20em;
     margin-left: 2em;
@@ -210,6 +224,13 @@ a:hover {
   }
   .homebttn {
     font-size: 0.7rem;
+    padding: 0.7rem;
+  }
+  nav ul {
+    flex-direction: column;
+    justify-content: centre;
+    text-align: center;
+    gap: 1rem;
   }
 }
 
@@ -310,7 +331,7 @@ a:hover {
   font-family: var(--p-font);
   font-weight: 600;
   font-size: 1.2rem;
-  box-shadow: 0.3rem 0.3rem;
+  box-shadow: 0.3rem 0.3rem var(--accent-color);
 }
 
 @media screen and (min-width: 760px) {
